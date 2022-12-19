@@ -8,7 +8,31 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<header id="heading">
+		<h3>Shopping List Calculator</h3><br><br>
+	</header>
+	<main onload="render()">
+		<table id="table">
+			
+			<tr>
+				<th>Item Name</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total</th> 
+			</tr>
+			<tr>
+        <form id="input">
+          <td><input type="text" id="itemname" placeholder="Name of Product"></td>
+          <td><input type="text" id="itemquantity" placeholder=" Enter Quantity"></td>
+          <td><input type="text" id="itemprice" placeholder="Enter Price"></td>
+        </form>
+        <td><button id="add" onclick="addData();">Add</button></td>
+      </tr>
+    </table><br><br>
+    <div id="total">Total Ammount is 0 RS</div>
+  </main>
+	
+    <script type="text/javascript" src="script.js">
 </script>
 
 </body>
